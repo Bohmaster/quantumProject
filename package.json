@@ -11,6 +11,7 @@
     "errorhandler": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-compass": "^2.0.4",
+    "gulp-inject": "^1.2.0",
     "loopback": "^2.14.0",
     "loopback-boot": "^2.6.5",
     "loopback-datasource-juggler": "^2.19.0",

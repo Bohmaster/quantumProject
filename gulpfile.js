@@ -7,7 +7,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('watch', ['index'], function() {
-	gulp.watch('./client/app/assets/scripts/*.js');
+	gulp.watch('./client/app/assets/scripts/*.js', ['index']);
 });
 
 gulp.task('index', function() {
@@ -22,7 +22,8 @@ gulp.task('index', function() {
 		}
 	);
 
-	return target.pipe(inject(sources))
-		.pipe(gulp.dest('./client/app'));
-});
+	return target
+		.pipe(inject(sources))		
+		.pipe(gulp.dest('./client/apps'));
+	});
 
